@@ -56,7 +56,7 @@ jobs:
           bison autoconf
           sudo apt-get install -q -y pkg-config || :
       - name: Set up Ruby
-        uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
+        uses: ruby/setup-ruby@360dc864d5da99d54fcb8e9148c14a84b90d3e88 # v1.165.1
         with:
           ruby-version: '3.1'
       - name: git config
