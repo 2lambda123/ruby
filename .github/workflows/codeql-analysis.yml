@@ -65,7 +65,7 @@ jobs:
       run: sudo rm /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@e5f05b81d5b6ff8cfa111c80c22c5fd02a384118 # v3.23.0
+      uses: github/codeql-action/init@379614612a29c9e28f31f39a59013eb8012a51f0 # v3.24.3
       with:
         languages: ${{ matrix.language }}
 
@@ -73,10 +73,10 @@ jobs:
       run: echo "GNUMAKEFLAGS=-j$((1 + $(nproc --all)))" >> $GITHUB_ENV
 
     - name: Autobuild
-      uses: github/codeql-action/autobuild@e5f05b81d5b6ff8cfa111c80c22c5fd02a384118 # v3.23.0
+      uses: github/codeql-action/autobuild@379614612a29c9e28f31f39a59013eb8012a51f0 # v3.24.3
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@e5f05b81d5b6ff8cfa111c80c22c5fd02a384118 # v3.23.0
+      uses: github/codeql-action/analyze@379614612a29c9e28f31f39a59013eb8012a51f0 # v3.24.3
       with:
         category: "/language:${{matrix.language}}"
         upload: False
@@ -105,6 +105,6 @@ jobs:
       if: ${{ matrix.language == 'ruby' }}
 
     - name: Upload SARIF
-      uses: github/codeql-action/upload-sarif@e5f05b81d5b6ff8cfa111c80c22c5fd02a384118 # v3.23.0
+      uses: github/codeql-action/upload-sarif@379614612a29c9e28f31f39a59013eb8012a51f0 # v3.24.3
       with:
         sarif_file: sarif-results/${{ matrix.language }}.sarif
