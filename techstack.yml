@@ -2,7 +2,7 @@ repo_name: 2lambda123/ruby
 report_id: 7086b4a0591bd0d49925dc3738fad590
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-09T06:56:46+00:00'
+timestamp: '2024-02-29T19:16:55+00:00'
 requested_by: snorkell-ai[bot]
 provider: github
 branch: master
@@ -104,7 +104,7 @@ tools:
   detection_source_url: https://github.com/2lambda123/ruby
   detection_source: Repo Metadata
 - name: Bundler
-  description: 'A consistent environment for tracking and installing  gems and versions '
+  description: A consistent environment for tracking and installing  gems and versions
   website_url: http://bundler.io
   open_source: false
   hosted_saas: false
